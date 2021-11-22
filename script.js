@@ -13,3 +13,18 @@ function selecionar(paletaAlvo) {
   paletaSelecionada.classList.remove("selected");
   paletaAlvo.target.classList.add("selected");
 }
+
+
+
+const tabelaDePixels = document.getElementById('pixel-board');
+tabelaDePixels.addEventListener("click", mudaCor);
+
+function mudaCor(alvo) {
+    let classe = document.getElementsByClassName("selected")[0].classList;
+    let classePixel = "pixel";
+    if (alvo.target.classList[0] === classePixel) {
+        alvo.target.className = "pixel " + classe[classe.length - 2];
+    }
+}
+
+// console.log('pixel ' + document.getElementsByClassName("selected")[0].classList[document.getElementsByClassName("selected")[0].classList.length - 2])

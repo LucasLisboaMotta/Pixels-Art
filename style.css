@@ -25,7 +25,7 @@ body {
 .white {
     background-color: white;
 }
-.caixa {
+.color {
     display: inline-block;
     border: black solid 1px;
     padding: 40px;
