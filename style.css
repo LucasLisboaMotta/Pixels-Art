@@ -4,22 +4,27 @@ body {
 
 .black {
     background-color: black;
+    color: black;
 }
 
 .green {
     background-color: green;
+    color: green
 }
 
 .blue {
     background-color: blue;
+    color: blue;
 }
 
 .yellow {
     background-color: yellow;
+    color: yellow;
 }
 
 .red {
     background-color: red;
+    color: red;
 }
 
 .white {
@@ -43,10 +48,27 @@ body {
     margin-top: 35px;
 }
 
+#title {
+    background-color: #F5DEB3;
+    margin-left: 50px;
+}
+
 header {
     margin-left: 25px;
 }
 
 #color-palette {
+    margin-left: 25px;
+}
+
+.botoes {
+    display: inline-block;
+}
+
+#inputPX {
+    margin-left: 40px;
+}
+
+#botoes {
     margin-left: 25px;
 }

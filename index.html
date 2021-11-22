@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-      <h1 id="title"> 
+      <h1 id="title" class="black"> 
           Paleta de Cores
       </h1>
     </header>
@@ -21,9 +21,20 @@
             <div class="color red"></div>
         </div>
         
-        <button id="clear-board">
-            Limpar
-        </button>
+        <div id="botoes">
+          <button id="clear-board" class="botoes">
+              Limpar
+          </button>
+
+          <div id="inputPX" class="botoes">
+              <label for="tamanhoPixel">Escolha o tamanho de 5 a 50</label>
+              <input id="board-size" type="number" min="5"  max="50" name="tamanhoPixel">
+              <button id="generate-board">
+                  VQV
+              </button>
+          </div>
+
+        </div>
 
         <div id="pixel-board">
           <div>
