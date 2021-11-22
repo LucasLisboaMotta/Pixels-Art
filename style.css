@@ -18,11 +18,30 @@
     background-color: red;
 }
 
+.white {
+    background-color: white;
+}
 .caixa {
+    display: inline-block;
+    border: black solid 1px;
     padding: 40px;
 }
 
-main div div {
+.pixel {
     display: inline-block;
     border: black solid 1px;
+    padding: 40px;
+}
+
+#pixel-board {
+    margin: 25px;
+    margin-top: 35px;
+}
+
+header {
+    margin-left: 25px;
+}
+
+#color-palette {
+    margin-left: 25px;
 }
