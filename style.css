@@ -1,0 +1,28 @@
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.caixa {
+    padding: 40px;
+}
+
+main div div {
+    display: inline-block;
+    border: black solid 1px;
+}
