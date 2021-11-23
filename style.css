@@ -35,7 +35,26 @@ body {
     border: black solid 1px;
     padding: 40px;
 }
-
+.pink {
+    background-color: #FF69B4;
+    color: #FF69B4;
+}
+.orange {
+    background-color: #FF8C00;
+    color: #FF8C00;
+}
+.purple {
+    background-color: #9400D3;
+    color: #9400D3;
+}
+.brown {
+    background-color: #A52A2A;
+    color: 	#A52A2A;
+}
+.grey {
+    background-color: #778899;
+    color: #778899;
+}
 .pixel {
     display: inline-block;
     border: black solid 1px;

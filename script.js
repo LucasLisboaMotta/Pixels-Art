@@ -76,6 +76,14 @@ function inputPixel() {
     verificaPixel(numeroPixel, lista);
   }
 }
-
+function corInicial() {
+  let coresBase = ['green', 'blue', 'red', 'orange', 'yellow', 'pink', 'brown', 'purple', 'grey'];
+  for (let i = 1; i <= 3; i += 1) {
+    const aleatorio = Math.floor(Math.random() * coresBase.length);
+    document.getElementsByClassName('color')[i].classList.add(coresBase[aleatorio]);
+    coresBase.splice(aleatorio, 1);
+  }
+}
+corInicial();
 const botaoVQV = document.getElementById('generate-board');
 botaoVQV.addEventListener('click', inputPixel);
