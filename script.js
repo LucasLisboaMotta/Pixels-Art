@@ -39,16 +39,32 @@ function limpar() {
 const botaoVQV = document.getElementById("generate-board");
 botaoVQV.addEventListener("click", inputPixel);
 
+function deletaPixel(list) {
+  const numeroDivs = list.children.length;
+  for (let i = 0; i < numeroDivs; i += 1) {
+    const div = list.children[0];
+    list.removeChild(div);
+  }
+}
+function criaPixel(numeroPixel, lista) {
+  for (let i = 0; i < numeroPixel; i += 1) {
+    const divsPais = document.createElement('div');
+    lista.appendChild(divsPais);
+    const divsPaisInserida = document.getElementById("pixel-board").children[i];
+    for (let i2 = 0; i2 < numeroPixel; i2 += 1) {
+      const divsFilhos = document.createElement('div');
+      divsFilhos.className = 'pixel white';
+      divsPaisInserida.appendChild(divsFilhos);
+    }
+  }
+}
 function inputPixel() {
   const numeroPixel = document.getElementById("board-size").value;
-  const lista = document.getElementsByClassName('pixel');
   if (numeroPixel === '') {
     alert('Board inválido!');
   } else {
-    for (let i = 0; i < lista.length; i += 1) {
-      lista[i].className = "pixel white";
-      lista[i].style.width = numeroPixel + 'px';
-      lista[i].style.height = numeroPixel + 'px';
-    }
+    const lista = document.getElementById("pixel-board");
+    deletaPixel(lista);
+    criaPixel(numeroPixel, lista);
   }
 }
